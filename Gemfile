@@ -38,7 +38,7 @@ gem 'carrierwave', "0.10.0"
 gem 'fog', '~> 1.37.0'
 
 # image upload cloudinary
-# gem 'cloudinary', '~> 1.16.0'
+gem 'cloudinary', '~> 1.16.0'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
