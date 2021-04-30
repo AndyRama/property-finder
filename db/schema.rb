@@ -10,10 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_30_192548) do
+ActiveRecord::Schema.define(version: 2021_04_30_201907) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "properties", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "photo"
+    t.string "status"
+    t.integer "price"
+    t.integer "rooms"
+    t.integer "bathrooms"
+    t.integer "parking_spaces"
+    t.boolean "for_sale"
+    t.datetime "available_date"
+    t.bigint "users_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.text "details"
+    t.string "intro"
+    t.string "img_int"
+    t.string "img_ext"
+    t.index ["users_id"], name: "index_properties_on_users_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -23,8 +44,17 @@ ActiveRecord::Schema.define(version: 2021_04_30_192548) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "admin", default: false
+    t.string "image"
+    t.string "company"
+    t.string "number"
+    t.text "details"
+    t.string "cover_image"
+    t.string "first_name"
+    t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "properties", "users", column: "users_id"
 end
