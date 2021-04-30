@@ -29,10 +29,25 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
+gem 'figaro'
+
+# gem 'pundit'
+
+# image upload
+gem 'carrierwave', "0.10.0"
+gem 'fog', '~> 1.37.0'
+
+# image upload cloudinary
+# gem 'cloudinary', '~> 1.16.0'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
+
+# add Map with geocoder
+gem 'geocoder'
+
+
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
