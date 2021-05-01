@@ -9,8 +9,8 @@ class Property < ApplicationRecord
   validates :name, presence: true
   validates :address, presence: true
   validates :photo, presence: true
-  validates :image_int, presence: true
-  validates :image_ext, presence: true
+  validates :img_int, presence: true
+  validates :img_ext, presence: true
   validates :status, presence: true
   validates :price, presence: true
   validates :rooms, presence: true

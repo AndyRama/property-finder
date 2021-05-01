@@ -5,8 +5,6 @@ print " Déjà existant: '-'"
 print " - "
 print " Création echouée: 'X'"
 
-Users.destroy_all
-
 puts "\n\n Création de 1 Utilisateurs"
 
 user1 = User.new(first_name:"ando",last_name:"alain",email:"andy@gmail.com",password: "Pbxk1984",url: nil, admin: true, image: nil, company:"A2RSII",number:"0679554022" ,details: "",cover_image: nil)
