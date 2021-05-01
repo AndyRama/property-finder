@@ -6,7 +6,9 @@ class PagesController < ApplicationController
      @properties = Property.where(for_sale: true)
   end
 
-  def avertise
+  def advertise
+     @properties = Property.latest
+     @properties = Property.where(for_sale: true)
   end
 
   def for_sale
@@ -18,5 +20,7 @@ class PagesController < ApplicationController
   end
 
   def contact
+     @properties = Property.latest
+     @properties = Property.where(for_sale: true)
   end
 end
