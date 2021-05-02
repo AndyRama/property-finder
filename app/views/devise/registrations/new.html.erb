@@ -10,12 +10,14 @@
       <%= f.input :last_name,
                   required: true,
                   input_html: { autocomplete: "last_name", placeholder:"Ramaroson" }%>
-      <%= f.input :image,
-                  required: false, 
-                  input_html: { autofocus: "avatar_profile" } %>
+     <%= f.input :image,
+                  input_html: { class: 'd-none' },
+                  label_html: { class: 'upload-avatar'},
+                  label: '📷 Upload a avatar' %>
       <%= f.input :cover_image,
-                  required: false, 
-                  input_html: { autofocus: "image_BG_profile" } %>
+                  input_html: { class: 'd-none' },
+                  label_html: { class: 'upload-cover-image'},
+                  label: '📷 Upload a cover image' %>
       <%= f.input :email,
                   required: true,
                   autofocus: true,

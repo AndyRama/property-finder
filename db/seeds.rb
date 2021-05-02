@@ -7,7 +7,7 @@ print " Création echouée: 'X'"
 
 puts "\n\n Création de 1 Utilisateurs"
 
-user2 = User.new(first_name:"andy",last_name:"alain",email:"andy@gmail.com",password: "Pbxk1984",url: nil, admin: true, image: "https://res.cloudinary.com/dbtnehfrf/image/upload/v1619189911/vkf87wxq2a9imtiaixy7jkkf3kpw.png", company:"A2RSII",number:"0679554022" ,details: "",cover_image: nil)
+user2 = User.new(first_name:"andy",last_name:"alain",email:"andy@gmail.com",password: "Pbxk1984",url: nil, admin: true, image: "https://res.cloudinary.com/dbtnehfrf/image/upload/v1619189911/vkf87wxq2a9imtiaixy7jkkf3kpw.png", company:"A2RSII",number:"0679554022" ,details: "test",cover_image: nil)
 
 puts "\n\n Création d'une image pour profil Utilisateurs"
 
