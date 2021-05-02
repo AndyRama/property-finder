@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
- root to: 'public#main'
-  devise_for :users
+  root to: 'public#main'
 
-  # resources :public  
-  resources :posts
-  resources :properties
+  devise_for :users
+  
+  devise_scope :user do
+    get 'users/sign_in' => "devise/sessions#new"
+    get 'users/sign_up' => "devise/sessions#edit"
+    get 'users/sign_out' => "devise/sessions#destroy"
+  end
+  
+  resources :posts, :properties
+ 
 
   get "/home" => "pages#home", as: :home
 
