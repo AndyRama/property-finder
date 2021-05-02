@@ -4,6 +4,7 @@ class PropertiesController < ApplicationController
   before_action :set_sidebar, except: [:show]
 
   def index
+    # @properties = policy_scope(Property).order(created_at: :desc)
     if current_user.admin?
       @properties = Property.all
     else

@@ -8,12 +8,12 @@ class PropertyPolicy < ApplicationPolicy
       return true
     end
   
-    def update?
-      return true
-    end
+    # def update?
+    #   return true
+    # end
 
-    def destroy?
-      return true
-    end
+    # def destroy?
+    #   return true
+    # end
   end
 end
