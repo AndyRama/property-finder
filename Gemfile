@@ -31,7 +31,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise'
 gem 'figaro'
 
-# gem 'pundit'
+gem 'pundit'
 
 # image upload
 gem 'carrierwave', "0.10.0"

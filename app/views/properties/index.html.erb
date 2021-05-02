@@ -21,7 +21,10 @@
         <td><%= property.rooms %></td>
         <td><%= property.bathrooms %></td>
         <td><%= link_to 'Show', property %></td>
-        <td><%= link_to 'Edit', edit_property_path(property) %></td>
+        <% if policy(Property).create? %>
+          <%#= link_to "Property", new_restaurant_path %>
+          <td><%= link_to 'Edit', edit_property_path(property) %></td>
+        <% end %>
         <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
