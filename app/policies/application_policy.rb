@@ -15,7 +15,7 @@ class ApplicationPolicy
   end
 
   def create?
-    is_admin?(@current_user) or @current_user == @user
+    true
   end
 
   def new?
@@ -23,7 +23,7 @@ class ApplicationPolicy
   end
 
   def update?
-    false
+    true
   end
 
   def edit?
