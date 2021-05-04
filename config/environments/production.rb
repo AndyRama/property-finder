@@ -4,8 +4,6 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.active_storage.service = :cloudinary
-
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -63,7 +61,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "property_finder_production"
+  # config.active_job.queue_name_prefix = "location_property_production"
 
   config.action_mailer.perform_caching = false
 
