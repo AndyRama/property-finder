@@ -5,10 +5,10 @@ Rails.application.routes.draw do
 
   devise_for :users
   
-  # devise_scope :user do
-  #   get 'users/sign_in' => "devise/sessions#new"
-  #   get 'users/sign_up' => "devise/sessions#edit"
-  #   get 'users/sign_out' => "devise/sessions#destroy"
+  devise_scope :user do
+    get 'users/sign_in' => "devise/sessions#new"
+    get 'users/sign_up' => "devise/sessions#edit"
+    get 'users/sign_out' => "devise/sessions#destroy"
 
     get "/users" => "admin#users", as: :users
 
@@ -24,5 +24,5 @@ Rails.application.routes.draw do
     get "/profile/:id" => 'dashboard#profile', as: :profile
 
     post "/agent/message" =>  "properties#email_agent", as: :email_agent
-  # end
+  end
 end
