@@ -1,6 +1,6 @@
 class PublicController < ApplicationController
   # skip_before_action :authenticate_user!, only: [:main]
-  before_action :authenticate_user!, except: %i[home]
+  # before_action :authenticate_user!, except: %i[home]
 
   def main
     if user_signed_in?
@@ -10,7 +10,7 @@ class PublicController < ApplicationController
       redirect_to home_path
     end
    
-    authorize @property
+    # authorize @property
     @properties = Property.latest
     @posts = Post.latest
   end
