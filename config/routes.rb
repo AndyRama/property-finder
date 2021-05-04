@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
     get "/users" => "admin#users", as: :users
 
-    get "home" => "pages#home", as: :home
+    get "/home" => "pages#home", as: :home
     get "/compte" => "pages#compte", as: :compte    
     get "/contact" => "pages#contact", as: :contact
     get "/feature" => "pages#feature", as: :feature
