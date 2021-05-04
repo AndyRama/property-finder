@@ -9,7 +9,8 @@ class PublicController < ApplicationController
     else
       redirect_to home_path
     end
-
+   
+    authorize @property
     @properties = Property.latest
     @posts = Post.latest
   end
