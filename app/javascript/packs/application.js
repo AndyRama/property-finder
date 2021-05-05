@@ -23,9 +23,11 @@ ActiveStorage.start()
 import "bootstrap";
 
 var jQuery = require("jquery");
-global.$ = global.jQuery = jQuery
-window.$ = window.jQuery = jQuery
-
+global.$ = global.jQuery = jQuery;
+window.$ = window.jQuery = jQuery;
+// require("jquery")
+// window.jQuery = $;
+// window.$ = $;
 
 import toastr from 'toastr';
   toastr.options = {
