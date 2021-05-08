@@ -4,12 +4,6 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 
 Location Property platform build using Ruby on Rails 6. 
 
-Adresse :"https://location-property-andy.herokuapp.com"
-
-# [🔗 View Deployed Version](https://location-property-andy.herokuapp.com)
-
-user: recruteur@gmail.com   pwd: Pbxk1064
-
 ## Main features:
 
 1. The sign up / sign in / edit account using the devise gem.
