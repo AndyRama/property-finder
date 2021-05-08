@@ -8,7 +8,7 @@ Adresse :"https://location-property-andy.herokuapp.com"
 
 # [🔗 View Deployed Version](https://location-property-andy.herokuapp.com)
 
-user: ando@gmail.com   pwd: 42KgrDYiewMgySx            user: recruteur@gmail.com   pwd: Pbxk1064
+user: recruteur@gmail.com   pwd: Pbxk1064
 
 ## Main features:
 
