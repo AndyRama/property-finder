@@ -7,7 +7,7 @@ print " Création echouée: 'X'"
 
 puts "\n\n Création de 1 Utilisateurs"
 
-andy = User.create(first_name:"anda",last_name:"alain",email:"anda@gmail.com",password: "Pbxk1984")
+andy = User.create(first_name:"anda",last_name:"alain",email:"anda@gmail.com",password: "Pbxk1984",admin: "true")
 if andy.save
   print('.')
 else
